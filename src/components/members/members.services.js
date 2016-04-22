@@ -8,7 +8,7 @@
 
     return {
       getAllMembers: function(){
-        return $http.get(api+"members"+"?limit=30")
+        return $http.get(api+"members"+"?limit=100&offset=41")
         .then(function(res){
           console.log('res', res);
           return res;

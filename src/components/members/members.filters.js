@@ -33,7 +33,7 @@ app.filter('interests', function(){
           break;
       }
     });
-    arr = arr.join(' , ');
+    arr = arr.join(' | ');
     return arr;
   };
 })

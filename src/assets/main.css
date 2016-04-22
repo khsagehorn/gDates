@@ -121,7 +121,7 @@ container span{
 
 header {
     background-color: #FE938C;
-    padding: 2rem;
+    padding: 1rem;
     box-shadow: 0 8px 6px -6px black;
     position: fixed !important;
     width: 100%;
@@ -131,6 +131,7 @@ header {
 header h1{
   text-align: center;
   margin:0px;
+  font-size: 5rem;
 
 }
 
@@ -139,29 +140,21 @@ header button{
   margin: 1rem;
 }
 
-.up {
-  color: #457B9D;
+.formBox {
+  float: right;
+  text-align: center;
+  width: 50%;
+  border-width: 1px;
+  border-color: #d2d2d2;
+  border-style: solid;
+  background-color: #FCD999;
+  margin: auto;
+  margin-top: 9rem;
+  padding: 1rem;
+  box-shadow: 0 8px 6px -6px black;
+
 }
 
-.down {
-  color: #E63946;
-}
-
-.green {
-  color: green;
-}
-
-.red {
-  color: red;
-}
-
-.ng-enter {
-  animation: fadeInRight .5s;
-}
-
-.ng-leave {
-  animation: fadeOutRight .5s;
-}
 
 .sortPosts span {
   font-size: 1.8rem;
@@ -173,7 +166,13 @@ header button{
   color: #E63946;
 }
 
-.glyphicon:hover {
-  transform: translate(0px,2px);
-  cursor:pointer;
+btn {
+  border-radius: 75px;
+}
+
+.fa-spinner {
+  position: absolute;
+  top: 20rem;
+  left: 25%;
+  font-size: 10rem;
 }

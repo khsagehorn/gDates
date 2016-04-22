@@ -25,15 +25,18 @@
         <div>
     </div>
   </div> -->
+  <div ng-show="loading">
+    <div class="fa fa-spinner fa-spin" ></div>
+  </div>
 
-  <div ng-hide="!login" class="profileScroll col-sm-6">
+  <div ng-hide="!profile" class="profileScroll col-sm-6">
       <div>  
         <container>
           <img ng-src="{{member.avatar}}">
           <h3>{{member.names.firstName}}</h3>
-          <p>Location: {{member.address.city}}</p>
-          <p>age: {{member.dob | ageFilter}}</p>
-          <p>Interested in: {{member.interestedIn | interests}}</p>
+          <p>Location: &nbsp;{{member.address.city}}</p>
+          <p>age: &nbsp;{{member.dob | ageFilter}}</p>
+          <p>Interested in: &nbsp;{{member.interestedIn | interests}}</p>
           <p>{{member.company.catchPhrase}}</p>
           <p>{{member.company.bs}}</p>
         </container>
