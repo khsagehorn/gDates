@@ -3,7 +3,6 @@ app.controller('allMembersController', ['$scope', 'memberDataService',
   memberDataService.getAllMembers()
     .then(function(members) {
       $scope.allMembers = members.data.data;
-      console.log($scope.allMembers)
   });
 
   $scope.login = false;

@@ -5,21 +5,22 @@
               <container class="memberBody">
                 <img ng-src="{{member.avatar}}">
 
-                <h3>{{member.names.firstName}}</h3>
-                <span class="" ng-class="{'green':post.rating>0,'red':post.rating<0}">{{post.rating}}
-                </span>
-                <p>Location: {{member.address.city}}</p><br>
-                <p>age: {{member.dob | filter: ageFilter}}</p>
+                <div class="memberInfo">
+                  <h3>{{member.names.firstName}}</h3>
+                  <p>Location: {{member.address.city}}</p>
+                  <p>age: {{member.dob | ageFilter}}</p>
+                </div>
               </container>
           <li>
       <ul>
   </div>
 
 <!--   <div ng-hide="login">
-    <div class="profileScroll col-sm-6">
+    <div class="loginBox col-sm-6">
         <div>  
           <container>
             <h1 class="fa fa-meh-o"></h1>
+            <h2>Login or Register</h2>
           </container>
         <div>
     </div>
@@ -30,8 +31,11 @@
         <container>
           <img ng-src="{{member.avatar}}">
           <h3>{{member.names.firstName}}</h3>
-          <p>Location: {{member.address.city | date:'MM/dd/yyyy'}}</p><br>
-          <p>age: {{member.dob}}</p>
+          <p>Location: {{member.address.city}}</p>
+          <p>age: {{member.dob | ageFilter}}</p>
+          <p>Interested in: {{member.interestedIn | interests}}</p>
+          <p>{{member.company.catchPhrase}}</p>
+          <p>{{member.company.bs}}</p>
         </container>
       <div>
   </div>
