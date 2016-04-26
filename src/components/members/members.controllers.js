@@ -1,9 +1,11 @@
 app.controller('allMembersController', ['$scope', 'memberDataService',
   function($scope, memberDataService) {
-  memberDataService.getAllMembers()
+    var offset = 1;
+  memberDataService.getAllMembers(offset)
     .then(function(members) {
       $scope.allMembers = members.data.data;
       $scope.loading = false;
+      offset = offset + 30;
   });
 
   $scope.loading = true;

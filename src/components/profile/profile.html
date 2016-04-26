@@ -4,8 +4,6 @@
             <img ng-src="{{member.avatar}}">
 
             <h3>{{member.names.firstName}}</h3>
-            <span class="" ng-class="{'green':post.rating>0,'red':post.rating<0}">{{post.rating}}
-            </span>
             <p>Location: {{member.address.city | date:'MM/dd/yyyy'}}</p><br>
             <p>age: {{member.dob}}</p>
             <p>{{post.description}}</p>

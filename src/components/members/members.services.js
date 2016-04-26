@@ -7,8 +7,8 @@
     var api = "https://galvanize-student-apis.herokuapp.com/gdating/"
 
     return {
-      getAllMembers: function(){
-        return $http.get(api+"members"+"?limit=100&offset=41")
+      getAllMembers: function(offset){
+        return $http.get(api+"members"+"?limit=30&offset="+offset)
         .then(function(res){
           console.log('res', res);
           return res;
@@ -18,6 +18,7 @@
           return err;
         });
       },
+
 
       getProfile: function(id){
         return $http.get(api+"members/"+id)
